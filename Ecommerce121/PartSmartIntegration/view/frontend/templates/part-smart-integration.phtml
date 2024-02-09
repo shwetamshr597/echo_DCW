@@ -1,0 +1,49 @@
+<?php
+/** @var Integration $block */
+use Ecommerce121\PartSmartIntegration\Block\PartSmart\Integration;
+
+$block->checkSession();
+
+$accessToken = $block->getAccessToken();
+$refreshToken = $block->getRefreshToken();
+$expiresIn = $block->getExpiresIn();
+?>
+<style>#ari-convergence-container {height:100vh}</style>
+<div id='part-smart-integration'>
+    <script src="https://www.partsmart.net/stream.js?access_token=<?= $accessToken ?>&refresh_token=<?= $refreshToken ?>&expires_in=<?= $expiresIn ?>"></script>
+</div>
+<script>
+    // @TODO Move to js file
+    function PartSmartAddToCart(event) {
+        jQuery.ajax({
+            url: '/partsmart/addtocart',
+            data: {
+                sku: event.sku,
+                qty: event.qty,
+            },
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            type: 'POST',
+            dataType: 'json',
+            showLoader: true,
+            cache: false,
+            success: function() {
+                refreshCart();
+            },
+            error: function () {
+                refreshCart();
+            }
+        });
+    }
+
+    function refreshCart() {
+        require([
+            'Magento_Customer/js/customer-data'
+        ], function (customerData) {
+            var sections = ['cart'];
+            customerData.invalidate(sections);
+            customerData.reload(sections, true);
+        });
+    }
+</script>

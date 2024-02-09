@@ -1,0 +1,22 @@
+<?php // phpcs:disable Generic.Files.LineLength.TooLong ?>
+<?php // phpcs:disable Magento2.Templates.ThisInTemplate.FoundHelper ?>
+<?php
+/**
+ * @var Magento\Catalog\Block\Product\ProductList\Toolbar $block
+ */
+?>
+<?php if ($block->getCollection()->getSize()): ?>
+    <?php
+    $widget = $this->helper(\Magento\Framework\Json\Helper\Data::class)->jsonDecode($block->getWidgetOptionsJson());
+    $widgetOptions = $this->helper(\Magento\Framework\Json\Helper\Data::class)->jsonEncode(
+        $widget['productListToolbarForm']
+    );
+    ?>
+    <div class="toolbar toolbar-products toolbar-product-table" data-mage-init='{"productListToolbarForm":<?= /* @noEscape */ $widgetOptions ?>}'>
+        <?php if ($block->isExpanded()): ?>
+            <?= /* @noEscape */ $block->fetchView($block->getTemplateFile('Magento_Catalog::product/list/toolbar/viewmode.phtml')); ?>
+        <?php endif; ?>
+
+        <?= /* @noEscape */ $block->fetchView($block->getTemplateFile('Magento_Catalog::product/list/toolbar/amount.phtml')); ?>
+    </div>
+<?php endif ?>

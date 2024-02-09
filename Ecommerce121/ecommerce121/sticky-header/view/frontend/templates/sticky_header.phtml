@@ -1,0 +1,31 @@
+<?php
+/*
+ * Copyright (c) 2021 121Ecommerce (https://www.121ecommerce.com/)
+ */
+?>
+<script>
+ require([
+    'jquery',
+    'mage/mage',
+    'domReady!'
+], function ($) {
+    'use strict';
+    $('.page-header').mage('Ecommerce121StickyHeader', {
+        container: '#maincontent',
+        name: 'header',
+        stickAfter: $('.page-header').height(),
+        cssAppliedClass: '.page-header',
+        paddingTopPage: $('.page-header').height() +
+            $('.sections.nav-sections').height() +
+            parseInt($('.sections.nav-sections').css('margin-bottom'))
+    });
+
+    $('.sections.nav-sections').mage('Ecommerce121StickyHeader', {
+         container: '#maincontent',
+         name: 'navigation',
+         stickAfter: $('.page-header').height(),
+         cssAppliedClass: '.sections.nav-sections'
+    });
+});
+</script>
+<span id="sticky-header-btn-navigation" class="sticky-header-btn-navigation"><span>Toggle Nav</span></span>

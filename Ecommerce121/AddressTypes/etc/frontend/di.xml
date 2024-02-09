@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Controller\Index\Index">
+        <plugin name="ecommerce121_address_types_check_if_customer_has_addresses_before_checkout"
+                type="Ecommerce121\AddressTypes\Plugin\Checkout\Index\CheckForAddressesBeforeCheckout"
+                sortOrder="200"/>
+    </type>
+</config>

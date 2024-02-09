@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Company\Ui\Component\Listing\Column\CompanyUsersActions">
+        <plugin name="ecommerce121_restrict_company_crud_remove_delete_action"
+                type="Ecommerce121\RestrictCompanyCRUD\Plugin\Ui\Component\Listing\Column\RemoveDeleteAction"/>
+    </type>
+    <type name="Magento\Company\Ui\Component\Listing\Role\Column\Actions">
+        <plugin name="ecommerce121_restrict_company_crud_remove_role_actions"
+                type="Ecommerce121\RestrictCompanyCRUD\Plugin\Ui\Component\Listing\Column\RemoveRoleActions"/>
+    </type>
+    <type name="Magento\Company\Block\Company\CompanyProfile">
+        <plugin name="ecommerce121_restrict_company_CRUD_remove_profile_edit"
+                type="Ecommerce121\RestrictCompanyCRUD\Plugin\Block\Company\RemoveCompanyProfileEdit"/>
+    </type>
+    <type name="Magento\Company\Block\Company\Management">
+        <plugin name="ecommerce121_restrict_company_crud_remove_super_user_actions"
+                type="Ecommerce121\RestrictCompanyCRUD\Plugin\Block\Company\ManagementRemoveSuperUserActions"/>
+    </type>
+    <type name="Magento\Company\Controller\Profile\Edit">
+        <plugin name="ecommerce121_restrict_company_CRUD_disable_profile_edit_access"
+                type="Ecommerce121\RestrictCompanyCRUD\Plugin\DisableProfileEditAccess"/>
+    </type>
+</config>

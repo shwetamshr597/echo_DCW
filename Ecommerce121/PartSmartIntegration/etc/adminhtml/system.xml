@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ecommerce121_partsmart" translate="label" sortOrder="50" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Part Smart Integration</label>
+            <tab>ecommerce121_extensions</tab>
+            <resource>Ecommerce121_AddressTypes::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="20" showInDefault="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+
+            <group id="credentials" translate="label" type="text" sortOrder="20" showInDefault="1">
+                <label>Authentication</label>
+                <field id="username" translate="label" type="text" sortOrder="10" canRestore="1" showInDefault="1">
+                    <label>Username</label>
+                </field>
+                <field id="password" translate="label" type="password" sortOrder="20" canRestore="1" showInDefault="1">
+                    <label>Password</label>
+                </field>
+                <field id="expires_in" translate="label" type="text" sortOrder="30" showInDefault="1">
+                    <label>Expires In</label>
+                </field>
+            </group>
+
+            <group id="endpoints" translate="label" type="text" sortOrder="30" canRestore="1" showInDefault="1" >
+                <label>API Endpoints</label>
+                <field id="authenticate" translate="label" type="text" sortOrder="20" canRestore="1" showInDefault="1">
+                    <label>Authenticate Path</label>
+                </field>
+                <field id="portal_user_token" translate="label" type="text" sortOrder="20" canRestore="1" showInDefault="1">
+                    <label>Portal User Token Path</label>
+                </field>
+            </group>
+
+            <group id="information" translate="label" type="text" sortOrder="40" canRestore="1" showInDefault="1" >
+                <label>Default Account Information</label>
+                <field id="firstname" translate="label" type="text" sortOrder="10" canRestore="1" showInDefault="1">
+                    <label>First Name</label>
+                </field>
+                <field id="lastname" translate="label" type="text" sortOrder="20" canRestore="1" showInDefault="1">
+                    <label>Last Name</label>
+                </field>
+                <field id="street" translate="label" type="text" sortOrder="30" canRestore="1" showInDefault="1">
+                    <label>Street Address</label>
+                </field>
+                <field id="city" translate="label" type="text" sortOrder="40" canRestore="1" showInDefault="1">
+                    <label>City</label>
+                </field>
+                <field id="state" translate="label" type="text" sortOrder="40" canRestore="1" showInDefault="1">
+                    <label>State</label>
+                </field>
+                <field id="postcode" translate="label" type="text" sortOrder="50" canRestore="1" showInDefault="1">
+                    <label>Postcode</label>
+                </field>
+                <field id="country" translate="label" type="text" sortOrder="60" canRestore="1" showInDefault="1">
+                    <label>Country</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

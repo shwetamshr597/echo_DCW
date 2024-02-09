@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Controller\Adminhtml\Address\DefaultBillingAddress">
+        <plugin name="ecommerce121_address_types_prevent_default_billing_address_if_not_billing_type"
+                type="Ecommerce121\AddressTypes\Plugin\Customer\Controller\Adminhtml\Address\ValidateIfBillingAddress"/>
+    </type>
+    <type name="Magento\Customer\Controller\Adminhtml\Address\DefaultShippingAddress">
+        <plugin name="ecommerce121_address_types_prevent_default_shipping_address_if_not_shipping_type"
+                type="Ecommerce121\AddressTypes\Plugin\Customer\Controller\Adminhtml\Address\ValidateIfShippingAddress"/>
+    </type>
+    <type name="Magento\Sales\Block\Adminhtml\Order\Create\Shipping\Address">
+        <plugin name="ecommerce121_address_types_set_shipping_same_as_billing_flag_to_false"
+                type="Ecommerce121\AddressTypes\Plugin\Sales\Block\Adminhtml\Order\Create\Shipping\Address\ShippingNotSameAsBilling"/>
+    </type>
+</config>

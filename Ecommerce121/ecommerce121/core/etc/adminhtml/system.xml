@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author 121eCommerce
+ * @copyright Copyright (c) 2017 121eCommerce (https://www.121ecommerce.com/)
+ * @package Ecommerce121_Core
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/system_file.xsd">
+    <system>
+        <tab id="ecommerce121_extensions" translate="label" sortOrder="10" >
+            <label><![CDATA[<span class="ecommerce121-logo">121Ecommerce</span>]]></label>
+        </tab>
+    </system>
+</config>

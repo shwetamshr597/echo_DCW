@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce121/module-hide-shipping-prices-from-cart",
+  "version": "1.0.0",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-checkout": "*",
+    "magento/module-gift-message": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Ecommerce121\\HideShippingPricesFromCart\\": ""
+    }
+  }
+}

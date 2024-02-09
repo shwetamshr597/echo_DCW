@@ -1,0 +1,21 @@
+<button id="import">Import Products </button>
+<script type="text/javascript">
+    require(["jquery"],function($) {
+        $("#import").click(function() {
+            $.ajax({
+                url: "<?php echo $block->getUrl('productimport/import/product/') ?>",
+                type: 'POST',
+                dataType: 'json',              
+                data: {form_key: window.FORM_KEY},
+            complete: function(response) {             
+                country = response.responseJSON.default_country;
+                state = response.responseJSON.state;         
+                console.log(state+' '+country);   
+                },
+                error: function (xhr, status, errorThrown) {
+                    console.log('Error happens. Try again.');
+                }
+            });
+        });
+    });
+</script>

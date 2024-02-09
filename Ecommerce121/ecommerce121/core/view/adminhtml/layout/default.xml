@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author 121eCommerce
+ * @copyright Copyright (c) 2017 121eCommerce (https://www.121ecommerce.com/)
+ * @package Ecommerce121_Core
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Ecommerce121_Core::css/main.css"/>
+    </head>
+</page>

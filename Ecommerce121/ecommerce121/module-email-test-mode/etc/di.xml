@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2022 121eCommerce (https://www.121ecommerce.com/)
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Mail\Template\TransportBuilder">
+        <plugin name="add_cc_check_test_mode_enabled"
+                type="Ecommerce121\EmailTestMode\Plugin\Framework\Mail\Template\TransportBuilder\AddCc"/>
+        <plugin name="add_to_check_test_mode_enabled"
+                type="Ecommerce121\EmailTestMode\Plugin\Framework\Mail\Template\TransportBuilder\AddTo"/>
+        <plugin name="add_bcc_check_test_mode_enabled"
+                type="Ecommerce121\EmailTestMode\Plugin\Framework\Mail\Template\TransportBuilder\AddBcc"/>
+        <plugin name="set_reply_to_check_test_mode_enabled"
+                type="Ecommerce121\EmailTestMode\Plugin\Framework\Mail\Template\TransportBuilder\SetReplyTo"/>
+    </type>
+</config>

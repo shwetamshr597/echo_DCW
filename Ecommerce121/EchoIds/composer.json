@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce121/module-echo-ids",
+  "version": "1.0.0",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-customer": "*",
+    "magento/module-company": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Ecommerce121\\EchoIds\\": ""
+    }
+  }
+}

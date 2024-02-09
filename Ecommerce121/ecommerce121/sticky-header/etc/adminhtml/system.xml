@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author 121eCommerce
+ * @copyright Copyright (c) 2021 121eCommerce (https://www.121ecommerce.com/)
+ * @package Ecommerce121_StickyHeader
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ecommerce121_sticky_header" translate="label" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Sticky Header</label>
+            <tab>ecommerce121_extensions</tab>
+            <resource>Ecommerce121_StickyHeader::config</resource>
+            <group id="general" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="pdp_simple" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Simple Product</label>
+                <field id="product_type" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Include in Sticky Header</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Include Add To Cart in Sticky Header.</comment>
+                </field>
+            </group>
+            <group id="pdp_configurable" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Configurable Product</label>
+                <field id="product_type" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Include in Sticky Header</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Include Add To Cart in Sticky Header.</comment>
+                </field>
+                <field id="max_options" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Max Option To Show</label>
+                    <comment>Max of the options renderer inside the sticky header.</comment>
+                </field>
+            </group>
+            <group id="pdp_bundle" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Bundle Product</label>
+                <field id="product_type" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Include in Sticky Header</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Include Add To Cart in Sticky Header.</comment>
+                </field>
+            </group>
+            <group id="pdp_grouped" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Grouped Product</label>
+                <field id="product_type" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Include in Sticky Header</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Include Add To Cart in Sticky Header.</comment>
+                </field>
+            </group>
+            <group id="pdp_virtual" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Virtual Product</label>
+                <field id="product_type" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Include in Sticky Header</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Include Add To Cart in Sticky Header.</comment>
+                </field>
+            </group>
+            <group id="pdp_downloadable" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Downloadable Product</label>
+                <field id="product_type" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Include in Sticky Header</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Include Add To Cart in Sticky Header.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

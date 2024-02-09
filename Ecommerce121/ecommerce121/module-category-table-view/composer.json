@@ -1,0 +1,16 @@
+{
+    "name": "ecommerce121/module-category-table-view",
+    "description": "add table category view",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ecommerce121\\CategoryTableView\\": ""
+        }
+    }
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author 121eCommerce
+ * @copyright Copyright (c) 2017 121eCommerce (https://www.121ecommerce.com/)
+ * @package Ecommerce121_Core
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\AbstractBlock">
+        <plugin name="exlude_ecommerce121_core" type="Ecommerce121\Core\Plugin\View\Element\AbstractBlock" />
+    </type>
+
+    <virtualType name="Ecommerce121\Core\Block\Adminhtml\ProductAttribute\Logo\Virtual" type="Ecommerce121\Core\Block\Adminhtml\Attribute\Logo">
+        <arguments>
+            <argument name="attributeIdsResolver" xsi:type="object">Ecommerce121\Core\Model\ProductAttributeIdsResolver\Virtual</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Ecommerce121\Core\Block\Adminhtml\CustomerAttribute\Logo\Virtual" type="Ecommerce121\Core\Block\Adminhtml\Attribute\Logo">
+        <arguments>
+            <argument name="attributeIdsResolver" xsi:type="object">Ecommerce121\Core\Model\CustomerAttributeIdsResolver\Virtual</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Ecommerce121\Core\Block\Adminhtml\CustomerAddressAttribute\Logo\Virtual" type="Ecommerce121\Core\Block\Adminhtml\Attribute\Logo">
+        <arguments>
+            <argument name="attributeIdsResolver" xsi:type="object">Ecommerce121\Core\Model\CustomerAddressAttributeIdsResolver\Virtual</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Ecommerce121\Core\Model\ProductAttributeIdsResolver\Virtual" type="Ecommerce121\Core\Model\AttributeIdsResolver">
+        <arguments>
+            <argument name="entityTypeCode" xsi:type="const">Magento\Catalog\Api\Data\ProductAttributeInterface::ENTITY_TYPE_CODE</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Ecommerce121\Core\Model\CustomerAttributeIdsResolver\Virtual" type="Ecommerce121\Core\Model\AttributeIdsResolver">
+        <arguments>
+            <argument name="entityTypeCode" xsi:type="const">Magento\Customer\Api\CustomerMetadataInterface::ENTITY_TYPE_CUSTOMER</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Ecommerce121\Core\Model\CustomerAddressAttributeIdsResolver\Virtual" type="Ecommerce121\Core\Model\AttributeIdsResolver">
+        <arguments>
+            <argument name="entityTypeCode" xsi:type="const">Magento\Customer\Api\AddressMetadataInterface::ENTITY_TYPE_ADDRESS</argument>
+        </arguments>
+    </virtualType>
+</config>

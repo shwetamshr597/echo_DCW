@@ -1,0 +1,12 @@
+{
+    "company": {
+        "column": {
+            "default_warehouse_id": true
+        }
+    },
+    "sales_order": {
+        "column": {
+            "company_warehouse": true
+        }
+    }
+}

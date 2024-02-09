@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sales\Model\OrderRepository">
+        <plugin name="ecommerce121_orders_fields_echo_ord_id"
+                type="Ecommerce121\OrderFields\Plugin\Model\Sales\OrderRepository\GetEchoOrdId"/>
+    </type>
+    <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid" type="Magento\Sales\Model\ResourceModel\Grid">
+        <arguments>
+            <argument name="columns" xsi:type="array">
+                <item name="echo_ord_id" xsi:type="string">sales_order.echo_ord_id</item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>

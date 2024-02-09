@@ -1,0 +1,32 @@
+<?php
+/**
+ * Copyright (c) 2021 121Ecommerce (https://www.121ecommerce.com/)
+ */
+
+use Ecommerce121\FixedFooter\Block\Footer;
+use Magento\Framework\Escaper;
+
+/** @var Footer $block */
+/** @var Escaper $escaper */
+
+$categories = $block->getCategoryCollection();
+?>
+<?php if ($categories->count() > 0): ?>
+    <div class="footer-categories">
+        <?php foreach ($categories as $category): ?>
+            <?php
+            $url = $category->getUrl($category);
+            $name = $category->getName();
+            $icon = $category->getImageUrl('category_footer_icon');
+            ?>
+            <a href="<?= $escaper->escapeHtml($url); ?>">
+                <?php if ($icon): ?>
+                    <img src="<?= $escaper->escapeUrl($block->getResizedImage($icon)); ?>"
+                         alt="<?= $escaper->escapeHtml($name); ?>">
+                <?php else: ?>
+                    <?= $escaper->escapeHtml($name) ?>
+                <?php endif ?>
+            </a>
+        <?php endforeach ?>
+    </div>
+<?php endif ?>

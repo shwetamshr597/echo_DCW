@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        
+        <referenceBlock name="checkout.cart.order.actions.gift_options" remove="true"/>       
+        <referenceBlock name="checkout.cart.item.renderers.simple.actions.gift_options" remove="true"/>
+        <referenceBlock name="checkout.cart.item.renderers.bundle.actions.gift_options" remove="true"/>
+        <referenceBlock name="checkout.cart.item.renderers.grouped.actions.gift_options" remove="true"/>
+        <referenceBlock name="checkout.cart.item.renderers.configurable.actions.gift_options" remove="true"/>
+        <referenceBlock name="checkout.cart.item.renderers.gift-card.actions.gift_options" remove="true"/>
+        <!--
+        <referenceContainer name="cart.discount" remove="true"/>
+        <referenceBlock name="checkout.cart.coupon" remove="true" />
+        -->
+        <referenceBlock name="checkout.cart.giftcardaccount" remove="true" />
+        
+        <referenceBlock name="checkout.cart.shipping" template="Ecommerce121_HideShippingPricesFromCart::cart/shipping.phtml">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="block-summary" xsi:type="array">
+                            <item name="config" xsi:type="array">
+                                <item name="componentDisabled" xsi:type="boolean">true</item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="checkout.cart.totals">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="block-totals" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="tax" xsi:type="array">
+                                    <item name="config" xsi:type="array">
+                                        <item name="template" xsi:type="string">Magento_Tax/checkout/cart/totals/tax</item>
+                                        <item name="title" xsi:type="string" translate="true">Tax</item>
+                                        <item name="componentDisabled" xsi:type="boolean">true</item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="checkout.payment.additional">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="giftCardAccount" xsi:type="array">
+                            <item name="config" xsi:type="array">
+                                <item name="componentDisabled" xsi:type="boolean">true</item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

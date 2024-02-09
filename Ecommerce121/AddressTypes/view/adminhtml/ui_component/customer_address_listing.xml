@@ -1,0 +1,13 @@
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="customer_address_columns">
+        <column name="address_type" component="Magento_Ui/js/grid/columns/select" sortOrder="95">
+            <settings>
+                <filter>select</filter>
+                <dataType>select</dataType>
+                <label translate="true">Address Type</label>
+                <options class="Ecommerce121\AddressTypes\Model\Source\AddressTypes"/>
+            </settings>
+        </column>
+    </columns>
+</listing>

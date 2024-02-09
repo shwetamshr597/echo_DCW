@@ -1,0 +1,348 @@
+{
+    "IcoMoonType": "selection",
+    "icons": [
+        {
+            "icon": {
+                "paths": [
+                    "M0 0h262.4v256h-262.4v-256z",
+                    "M396.8 0h627.2v256h-627.2v-256z",
+                    "M0 384h262.4v256h-262.4v-256z",
+                    "M396.8 384h627.2v256h-627.2v-256z",
+                    "M0 768h262.4v256h-262.4v-256z",
+                    "M396.8 768h627.2v256h-627.2v-256z"
+                ],
+                "attrs": [],
+                "isMulticolor": false,
+                "isMulticolor2": false,
+                "grid": 0,
+                "tags": [
+                    "icon-table-mode"
+                ],
+                "colorPermutations": {}
+            },
+            "attrs": [],
+            "properties": {
+                "order": 6,
+                "id": 0,
+                "name": "list",
+                "prevSize": 32,
+                "code": 59648
+            },
+            "setIdx": 0,
+            "setId": 2,
+            "iconIdx": 0
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M704 512v384h64v-384h160l-192-192-192 192z",
+                    "M64 192h96v64h-96v-64z",
+                    "M192 192h96v64h-96v-64z",
+                    "M320 192h64v96h-64v-96z",
+                    "M64 416h64v96h-64v-96z",
+                    "M160 448h96v64h-96v-64z",
+                    "M288 448h96v64h-96v-64z",
+                    "M64 288h64v96h-64v-96z",
+                    "M320 320h64v96h-64v-96z",
+                    "M320 704v192h-192v-192h192zM384 640h-320v320h320v-320z"
+                ],
+                "tags": [
+                    "move-up",
+                    "sort",
+                    "arrange"
+                ],
+                "defaultCode": 59974,
+                "grid": 16,
+                "attrs": []
+            },
+            "attrs": [],
+            "properties": {
+                "ligatures": "move-up, sort",
+                "name": "move-up",
+                "order": 9,
+                "id": 327,
+                "prevSize": 32,
+                "code": 59974
+            },
+            "setIdx": 1,
+            "setId": 1,
+            "iconIdx": 326
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M768 704v-384h-64v384h-160l192 192 192-192z",
+                    "M320 256v192h-192v-192h192zM384 192h-320v320h320v-320z",
+                    "M64 640h96v64h-96v-64z",
+                    "M192 640h96v64h-96v-64z",
+                    "M320 640h64v96h-64v-96z",
+                    "M64 864h64v96h-64v-96z",
+                    "M160 896h96v64h-96v-64z",
+                    "M288 896h96v64h-96v-64z",
+                    "M64 736h64v96h-64v-96z",
+                    "M320 768h64v96h-64v-96z"
+                ],
+                "tags": [
+                    "move-down",
+                    "sort",
+                    "arrange"
+                ],
+                "defaultCode": 59975,
+                "grid": 16,
+                "attrs": []
+            },
+            "attrs": [],
+            "properties": {
+                "ligatures": "move-down, sort2",
+                "name": "move-down",
+                "order": 10,
+                "id": 328,
+                "prevSize": 32,
+                "code": 59975
+            },
+            "setIdx": 1,
+            "setId": 1,
+            "iconIdx": 327
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M320 768v-768h-128v768h-160l224 224 224-224h-160z",
+                    "M928 1024h-256c-11.8 0-22.644-6.496-28.214-16.9-5.566-10.404-4.958-23.030 1.59-32.85l222.832-334.25h-196.208c-17.672 0-32-14.328-32-32s14.328-32 32-32h256c11.8 0 22.644 6.496 28.214 16.9 5.566 10.404 4.958 23.030-1.59 32.85l-222.83 334.25h196.206c17.672 0 32 14.328 32 32s-14.328 32-32 32z",
+                    "M1020.622 401.686l-192.002-384c-5.42-10.842-16.502-17.69-28.622-17.69-12.122 0-23.202 6.848-28.624 17.69l-191.996 384c-7.904 15.806-1.496 35.030 14.31 42.932 4.594 2.296 9.476 3.386 14.288 3.386 11.736 0 23.040-6.484 28.644-17.698l55.156-110.31h216.446l55.156 110.31c7.902 15.806 27.124 22.21 42.932 14.31 15.808-7.902 22.216-27.124 14.312-42.93zM723.778 255.996l76.22-152.446 76.224 152.446h-152.444z"
+                ],
+                "tags": [
+                    "sort-alpha-asc",
+                    "arrange",
+                    "alphabetic"
+                ],
+                "defaultCode": 59976,
+                "grid": 16,
+                "attrs": []
+            },
+            "attrs": [],
+            "properties": {
+                "ligatures": "sort-alpha-asc, arrange",
+                "name": "sort-alpha-asc",
+                "order": 11,
+                "id": 329,
+                "prevSize": 32,
+                "code": 59976
+            },
+            "setIdx": 1,
+            "setId": 1,
+            "iconIdx": 328
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M320 768v-768h-128v768h-160l224 224 224-224h-160z",
+                    "M928 448h-256c-11.8 0-22.644-6.496-28.214-16.9-5.566-10.406-4.958-23.030 1.59-32.85l222.832-334.25h-196.208c-17.672 0-32-14.328-32-32s14.328-32 32-32h256c11.8 0 22.644 6.496 28.214 16.9 5.566 10.406 4.958 23.030-1.59 32.85l-222.83 334.25h196.206c17.672 0 32 14.328 32 32s-14.328 32-32 32z",
+                    "M1020.622 977.69l-192.002-384c-5.42-10.842-16.502-17.69-28.622-17.69-12.122 0-23.202 6.848-28.624 17.69l-191.996 384c-7.904 15.806-1.496 35.030 14.31 42.932 4.594 2.296 9.476 3.386 14.288 3.386 11.736 0 23.040-6.484 28.644-17.698l55.158-110.31h216.446l55.156 110.31c7.902 15.806 27.124 22.21 42.932 14.31 15.806-7.902 22.214-27.124 14.31-42.93zM723.778 832l76.22-152.446 76.226 152.446h-152.446z"
+                ],
+                "tags": [
+                    "sort-alpha-desc",
+                    "arrange",
+                    "alphabetic"
+                ],
+                "defaultCode": 59977,
+                "grid": 16,
+                "attrs": []
+            },
+            "attrs": [],
+            "properties": {
+                "ligatures": "sort-alpha-desc, arrange2",
+                "name": "sort-alpha-desc",
+                "order": 12,
+                "id": 330,
+                "prevSize": 32,
+                "code": 59977
+            },
+            "setIdx": 1,
+            "setId": 1,
+            "iconIdx": 329
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M320 768v-768h-128v768h-160l224 224 224-224h-160z",
+                    "M864 448c-17.674 0-32-14.328-32-32v-352h-32c-17.674 0-32-14.328-32-32s14.326-32 32-32h64c17.674 0 32 14.328 32 32v384c0 17.672-14.326 32-32 32z",
+                    "M928 576h-192c-17.674 0-32 14.326-32 32v192c0 17.674 14.326 32 32 32h160v128h-160c-17.674 0-32 14.326-32 32s14.326 32 32 32h192c17.674 0 32-14.326 32-32v-384c0-17.674-14.326-32-32-32zM768 640h128v128h-128v-128z"
+                ],
+                "tags": [
+                    "sort-numeric-asc",
+                    "arrange"
+                ],
+                "defaultCode": 59978,
+                "grid": 16,
+                "attrs": []
+            },
+            "attrs": [],
+            "properties": {
+                "ligatures": "sort-numeric-asc, arrange3",
+                "name": "sort-numeric-asc",
+                "order": 13,
+                "id": 331,
+                "prevSize": 32,
+                "code": 59978
+            },
+            "setIdx": 1,
+            "setId": 1,
+            "iconIdx": 330
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M320 768v-768h-128v768h-160l224 224 224-224h-160z",
+                    "M864 1024c-17.674 0-32-14.328-32-32v-352h-32c-17.674 0-32-14.328-32-32s14.326-32 32-32h64c17.674 0 32 14.328 32 32v384c0 17.672-14.326 32-32 32z",
+                    "M928 0h-192c-17.674 0-32 14.326-32 32v192c0 17.674 14.326 32 32 32h160v128h-160c-17.674 0-32 14.326-32 32s14.326 32 32 32h192c17.674 0 32-14.326 32-32v-384c0-17.674-14.326-32-32-32zM768 64h128v128h-128v-128z"
+                ],
+                "tags": [
+                    "sort-numberic-desc",
+                    "arrange"
+                ],
+                "defaultCode": 59979,
+                "grid": 16,
+                "attrs": []
+            },
+            "attrs": [],
+            "properties": {
+                "ligatures": "sort-numberic-desc, arrange4",
+                "name": "sort-numberic-desc",
+                "order": 14,
+                "id": 332,
+                "prevSize": 32,
+                "code": 59979
+            },
+            "setIdx": 1,
+            "setId": 1,
+            "iconIdx": 331
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M320 768v-768h-128v768h-160l224 224 224-224h-160z",
+                    "M448 576h576v128h-576v-128z",
+                    "M448 384h448v128h-448v-128z",
+                    "M448 192h320v128h-320v-128z",
+                    "M448 0h192v128h-192v-128z"
+                ],
+                "tags": [
+                    "sort-amount-asc",
+                    "arrange"
+                ],
+                "defaultCode": 59980,
+                "grid": 16,
+                "attrs": []
+            },
+            "attrs": [],
+            "properties": {
+                "ligatures": "sort-amount-asc, arrange5",
+                "name": "sort-amount-asc",
+                "order": 7,
+                "id": 333,
+                "prevSize": 32,
+                "code": 59980
+            },
+            "setIdx": 1,
+            "setId": 1,
+            "iconIdx": 332
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M320 768v-768h-128v768h-160l224 224 224-224h-160z",
+                    "M448 0h576v128h-576v-128z",
+                    "M448 192h448v128h-448v-128z",
+                    "M448 384h320v128h-320v-128z",
+                    "M448 576h192v128h-192v-128z"
+                ],
+                "tags": [
+                    "sort-amount-desc",
+                    "arrange"
+                ],
+                "defaultCode": 59981,
+                "grid": 16,
+                "attrs": []
+            },
+            "attrs": [],
+            "properties": {
+                "ligatures": "sort-amount-desc, arrange6",
+                "name": "sort-amount-desc",
+                "order": 8,
+                "id": 334,
+                "prevSize": 32,
+                "code": 59981
+            },
+            "setIdx": 1,
+            "setId": 1,
+            "iconIdx": 333
+        },
+        {
+            "icon": {
+                "paths": [
+                    "M0 64v896h1024v-896h-1024zM384 640v-192h256v192h-256zM640 704v192h-256v-192h256zM640 192v192h-256v-192h256zM320 192v192h-256v-192h256zM64 448h256v192h-256v-192zM704 448h256v192h-256v-192zM704 384v-192h256v192h-256zM64 704h256v192h-256v-192zM704 896v-192h256v192h-256z"
+                ],
+                "tags": [
+                    "table",
+                    "wysiwyg"
+                ],
+                "defaultCode": 60017,
+                "grid": 16,
+                "attrs": []
+            },
+            "attrs": [],
+            "properties": {
+                "ligatures": "table2, wysiwyg19",
+                "name": "table",
+                "order": 5,
+                "id": 370,
+                "prevSize": 32,
+                "code": 60017
+            },
+            "setIdx": 1,
+            "setId": 1,
+            "iconIdx": 369
+        }
+    ],
+    "height": 1024,
+    "metadata": {
+        "name": "category-table-view"
+    },
+    "preferences": {
+        "showGlyphs": true,
+        "showQuickUse": true,
+        "showQuickUse2": true,
+        "showSVGs": true,
+        "fontPref": {
+            "prefix": "icon-",
+            "metadata": {
+                "fontFamily": "category-table-view",
+                "majorVersion": 1,
+                "minorVersion": 0,
+                "copyright": "121eCommerce LLC"
+            },
+            "metrics": {
+                "emSize": 1024,
+                "baseline": 6.25,
+                "whitespace": 50
+            },
+            "embed": false,
+            "showSelector": true,
+            "showMetrics": true,
+            "showVersion": true,
+            "showMetadata": true
+        },
+        "imagePref": {
+            "prefix": "icon-",
+            "png": true,
+            "useClassSelector": true,
+            "color": 0,
+            "bgColor": 16777215,
+            "classSelector": ".icon"
+        },
+        "historySize": 50,
+        "showCodes": true,
+        "gridSize": 16
+    }
+}

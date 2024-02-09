@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="general">
+        <field name="default_warehouse_id" formElement="select">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">company</item>
+                </item>
+            </argument>
+            <settings>
+                <disabled>true</disabled>
+                <dataType>text</dataType>
+                <label translate="true">Default Warehouse</label>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options class="Ecommerce121\CompanyDefaultWarehouse\Model\Company\Source\DefaultWarehouses"/>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+    </fieldset>
+</form>

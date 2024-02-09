@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce121/module-email-test-mode",
+  "description": "Email test mode extension by 121eCommerceLLC",
+  "require": {
+    "ecommerce121/core": "1.0.*",
+    "php": "~7.4.0||~8.1.0"
+  },
+  "type": "magento2-module",
+  "license": [
+    "Commercial"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Ecommerce121\\EmailTestMode\\": ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}

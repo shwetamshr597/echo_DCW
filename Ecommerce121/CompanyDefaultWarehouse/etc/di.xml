@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\CatalogInventory\Block\Stockqty\AbstractStockqty">
+        <plugin name="ecommerce121_company_default_warehouse_only_show_source_qty_left"
+                type="Ecommerce121\CompanyDefaultWarehouse\Plugin\AbstractStockQtyLeft"/>
+        <plugin name="magentoInventorySalesFrontendUiAbstractStockqty" disabled="true"/>
+    </type>
+        <type name="Magento\Company\Api\CompanyRepositoryInterface">
+        <plugin name="ecommerce121_load_default_warehouse_id_on_get_list"
+                type="Ecommerce121\CompanyDefaultWarehouse\Plugin\CompanyRepository\LoadDefaultWarehouseOnGetListPlugin"/>
+        <plugin name="ecommerce121_load_default_warehouse_id_on_get"
+                type="Ecommerce121\CompanyDefaultWarehouse\Plugin\CompanyRepository\LoadDefaultWarehouseOnGetPlugin"/>
+        <plugin name="ecommerce121_save_default_warehouse_id"
+                type="Ecommerce121\CompanyDefaultWarehouse\Plugin\CompanyRepository\SaveDefaultWarehousePlugin"/>
+    </type>
+</config>

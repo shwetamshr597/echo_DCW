@@ -1,0 +1,23 @@
+{
+    "name": "amasty/module-product-status-suite-lite",
+    "description": "Product Availability Status Lite by Amasty",
+    "require": {
+        "php": ">=7.3",
+        "amasty/base": ">=1.13.4",
+        "amasty/stockstatus": "*"
+    },
+    "homepage": "https://amasty.com/",
+    "type": "magento2-module",
+    "version": "2.3.8",
+    "license": [
+        "Commercial"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Amasty\\ProductStatusLite\\": ""
+        }
+    }
+}

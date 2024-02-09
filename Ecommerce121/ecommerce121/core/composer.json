@@ -1,0 +1,29 @@
+{
+    "name": "ecommerce121/core",
+    "description": "121eCommerceLLC Core extension",
+    "require": {
+        "php": "~5.6.0||~7.0.0||~7.1.0||~7.2.0||~7.3.0||~7.4.0||~8.1.0",
+        "magento/framework": "~100.1.1||~101.0||~102.0||~103.0",
+        "magento/module-backend": "~100.1||~100.2||~101.0||~102.0",
+        "magento/module-catalog": "~101.0.1||~102.0||~103.0||~104.0",
+        "magento/module-customer": "~100.1.1||~101.0||~102.0||~103.0",
+        "magento/module-eav": "~100.1.1||~101.0||~102.0||~102.1"
+    },
+    "type": "magento2-module",
+    "license": [
+        "Commercial"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ecommerce121\\Core\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "v1.0-dev"
+        }
+    }
+}

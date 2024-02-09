@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="address" class="Magento\Customer\Ui\Component\Form\AddressFieldset">
+        <container name="customer_default_billing_address_wrapper" template="Magento_Customer/default-address-wrapper">
+            <button name="edit_billing_address" component="Magento_Customer/js/address/default-address">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="disabled" xsi:type="boolean">true</item>
+                        <item name="visible" xsi:type="boolean">false</item>
+                    </item>
+                </argument>
+            </button>
+        </container>
+        <container name="customer_default_shipping_address_wrapper" template="Magento_Customer/default-address-wrapper">
+            <button name="edit_shipping_address" component="Magento_Customer/js/address/default-address">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="disabled" xsi:type="boolean">true</item>
+                        <item name="visible" xsi:type="boolean">false</item>
+                    </item>
+                </argument>
+            </button>
+        </container>
+        <button name="add_address" component="Magento_Customer/js/address/default-address">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="disabled" xsi:type="boolean">true</item>
+                    <item name="visible" xsi:type="boolean">false</item>
+                </item>
+            </argument>
+        </button>
+    </fieldset>
+</form>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="company_columns">
+        <column name="echo_cust_id" sortOrder="30">
+            <settings>
+                <filter>text</filter>
+                <editor>
+                    <editorType>text</editorType>
+                </editor>
+                <label translate="true">ECHO Company ID</label>
+            </settings>
+        </column>
+        <column name="echo_cust_class" sortOrder="30">
+            <settings>
+                <filter>text</filter>
+                <editor>
+                    <editorType>text</editorType>
+                </editor>
+                <label translate="true">ECHO Cust Class</label>
+            </settings>
+        </column>
+        <column name="echo_salesRep_id" sortOrder="30">
+            <settings>
+                <filter>text</filter>
+                <editor>
+                    <editorType>text</editorType>
+                </editor>
+                <label translate="true">ECHO SalesRep ID</label>
+            </settings>
+        </column>
+    </columns>
+</listing>

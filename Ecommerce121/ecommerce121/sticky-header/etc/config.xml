@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author 121eCommerce
+ * @copyright Copyright (c) 2021 121eCommerce (https://www.121ecommerce.com/)
+ * @package Ecommerce121_StickyHeader
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ecommerce121_sticky_header>
+        <general>
+            <enable>1</enable>
+        </general>
+        <pdp_simple>
+            <product_type>1</product_type>
+        </pdp_simple>
+        <pdp_configurable>
+            <product_type>1</product_type>
+            <max_options>2</max_options>
+        </pdp_configurable>
+        <pdp_bundle>
+            <product_type>0</product_type>
+        </pdp_bundle>
+        <pdp_grouped>
+            <product_type>0</product_type>
+        </pdp_grouped>
+        <pdp_virtual>
+            <product_type>1</product_type>
+        </pdp_virtual>
+        <pdp_downloadable>
+            <product_type>0</product_type>
+        </pdp_downloadable>
+        </ecommerce121_sticky_header>
+    </default>
+</config>

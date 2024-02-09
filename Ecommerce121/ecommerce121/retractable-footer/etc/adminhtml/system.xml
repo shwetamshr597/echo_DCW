@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ecommerce121_fixed_footer_order" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Fixed Footer</label>
+            <tab>ecommerce121_extensions</tab>
+            <resource>Ecommerce121_FixedFooterOrder::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="order" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Select Order type</label>
+                    <source_model>Ecommerce121\FixedFooter\Model\Config\Source\Order</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

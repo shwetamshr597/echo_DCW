@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2021 121Ecommerce (https://www.121ecommerce.com/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <link src="Ecommerce121_FixedFooter::js/footer-fixed.js"/>
+    </head>
+    <body>
+        <attribute name="class" value="categories-footer"/>
+        <referenceContainer name="page.wrapper">
+            <block class="Ecommerce121\FixedFooter\Block\Footer"
+                   name="default"
+                   template="Ecommerce121_FixedFooter::footer-categories.phtml"
+                   after="before.body.end" />
+        </referenceContainer>
+    </body>
+</page>

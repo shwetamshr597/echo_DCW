@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Ecommerce121\CategoryTableView\Model\Category\GetFilters">
+        <arguments>
+            <argument name="filterList" xsi:type="object">categoryFilterList</argument>
+            <argument name="defaultAttributes" xsi:type="array">
+                <item name="sku" xsi:type="string">sku</item>
+                <item name="name" xsi:type="string">name</item>
+                <item name="price" xsi:type="string">price</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Catalog\Block\Product\ListProduct">
+        <plugin name="Ecommerce121_CategoryTableView::UpdateTemplateBeforeToHtml"
+                type="Ecommerce121\CategoryTableView\Plugin\Magento\Catalog\Block\Product\ListProduct\UpdateTemplateBeforeToHtmlPlugin"
+                sortOrder="50" />
+    </type>
+    <type name="Ecommerce121\CategoryTableView\Plugin\Magento\Catalog\Block\Product\ListProduct\UpdateTemplateBeforeToHtmlPlugin">
+        <arguments>
+            <argument name="allowedBlockNames" xsi:type="array">
+                <item name="category.products.list" xsi:type="string">category.products.list</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Catalog\Helper\Product\ProductList">
+        <plugin name="Ecommerce121_CategoryTableView::AddTableModeAfterGetAvailableViewModePlugin"
+                type="Ecommerce121\CategoryTableView\Plugin\Magento\Catalog\Helper\Product\ProductList\AddTableModeAfterGetAvailableViewModePlugin"
+                sortOrder="50" />
+    </type>
+    <type name="Magento\Catalog\Block\Product\ProductList\Toolbar">
+        <plugin name="Ecommerce121_CategoryTableView::UpdateTemplateBeforeToHtml"
+                type="Ecommerce121\CategoryTableView\Plugin\Magento\Catalog\Block\Product\ProductList\Toolbar\UpdateTemplateBeforeToHtmlPlugin"
+                sortOrder="50" />
+    </type>
+    <type name="Ecommerce121\CategoryTableView\Plugin\Magento\Catalog\Block\Product\ProductList\Toolbar\UpdateTemplateBeforeToHtmlPlugin">
+        <arguments>
+            <argument name="allowedBlockNames" xsi:type="array">
+                <item name="product_list_toolbar" xsi:type="string">product_list_toolbar</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

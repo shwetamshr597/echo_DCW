@@ -1,0 +1,16 @@
+<?php
+/**
+ * @var \Ecommerce121\Core\Block\Adminhtml\Attribute\Logo $block
+ */
+$selectors = $block->getSelectors();
+?>
+<?php if (!empty($selectors)): ?>
+    <style>
+        <?= /* @noEscape */ implode(', ', $selectors); ?> {
+            background-image: url(<?= $block->escapeUrl($block->getLogoUrl()); ?>);
+            background-repeat: no-repeat;
+            background-size: 35px;
+            background-position: 98% 50%;
+        }
+    </style>
+<?php endif; ?>

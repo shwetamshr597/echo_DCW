@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ecommerce121_category_table_view" translate="label" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Category Table View</label>
+            <tab>ecommerce121_extensions</tab>
+            <resource>Ecommerce121_CategoryTableView::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1">
+                <label>General</label>
+                <field id="attributes" translate="label" sortOrder="10" showInDefault="1">
+                    <label>Product Attributes</label>
+                    <frontend_model>Ecommerce121\CategoryTableView\Block\Adminhtml\Form\Field\TableAttributes</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment>Leave empty to use default filters SKU, product name, price. The list of product attributes with 'text', 'date' and 'select' frontend_input types and enabled `Used in Product Listing`.</comment>
+                </field>
+                <field id="merge_layered_nav_attributes" translate="label" type="select" sortOrder="20" showInDefault="1">
+                    <label>Do you want to merge your configuration with the Layered Nav attributes?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="display_short_description" translate="label" type="select" sortOrder="30" showInDefault="1">
+                    <label>Do you want to display short description?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

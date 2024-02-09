@@ -1,0 +1,17 @@
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <columns name="company_columns">
+        <column name="default_warehouse_id"
+                component="Magento_Ui/js/grid/columns/select"
+                class="Ecommerce121\CompanyDefaultWarehouse\Ui\Component\Listing\Column\DefaultWarehouse"
+                sortOrder="205">
+            <settings>
+                <filter>select</filter>
+                <options class="Ecommerce121\CompanyDefaultWarehouse\Model\Company\Source\DefaultWarehouses"/>
+                <dataType>select</dataType>
+                <label translate="true">Default Warehouse</label>
+                <visible>true</visible>
+            </settings>
+        </column>
+    </columns>
+</listing>

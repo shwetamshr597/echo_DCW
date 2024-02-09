@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author 121eCommerce
+ * @copyright Copyright (c) 2017 121eCommerce (https://www.121ecommerce.com/)
+ * @package Ecommerce121_Core
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Ecommerce121_Core" setup_version="2.0.9">
+        <sequence>
+            <module name="Magento_Backend" />
+            <module name="Magento_Catalog" />
+            <module name="Magento_Customer" />
+            <module name="Magento_Eav" />
+        </sequence>
+    </module>
+</config>

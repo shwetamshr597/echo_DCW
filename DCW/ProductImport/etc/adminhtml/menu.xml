@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="DCW_ProductImport::parent" title="ProductImport" module="DCW_ProductImport" sortOrder="100" resource="DCW_ProductImport::parent"/>
+        <add id="DCW_ProductImport::index" title="ProductImport Index" module="DCW_ProductImport" sortOrder="10" action="productimport/index" resource="DCW_ProductImport::index" parent="DCW_ProductImport::parent"/>
+		
+    </menu>
+</config>

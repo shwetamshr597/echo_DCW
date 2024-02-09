@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <body>
+        <referenceBlock name="customer_account_navigation">
+            <block class="Magento\Customer\Block\Account\SortLinkInterface" name="my_invoice_page" after="my-account-link">
+                <arguments>
+                    <argument name="path" xsi:type="string">https://www.external-website.com/</argument>
+                    <argument name="label" xsi:type="string" translate="true">My Invoices</argument>
+                    <argument name="attributes" xsi:type="array">
+                        <item name="target" xsi:type="string">_blank</item>
+                    </argument>
+                    <argument name="sortOrder" xsi:type="number">218</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</config>

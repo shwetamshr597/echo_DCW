@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+  ~ Copyright (c) 2022 121eCommerce (https://www.121ecommerce.com/)
+  -->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="system">
+            <group id="smtp">
+                <field id="test_mode" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable Test Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="disable">0</field>
+                    </depends>
+                </field>
+                <field id="test_emails" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Test Emails</label>
+                    <validate>required-entry validate-emails</validate>
+                    <depends>
+                        <field id="disable">0</field>
+                        <field id="test_mode">1</field>
+                    </depends>
+                    <comment>Comma-separated emails. Only first email address is used for the Newsletter Queue.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

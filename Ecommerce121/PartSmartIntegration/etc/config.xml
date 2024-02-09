@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ecommerce121_partsmart>
+            <general>
+                <enable>1</enable>
+            </general>
+            <information>
+                <firstname>Echo</firstname>
+                <lastname>Part Smart</lastname>
+                <street>400 Oakwood Rd</street>
+                <city>Lake Zurich</city>
+                <postcode>60047</postcode>
+                <state>IL</state>
+                <country>US</country>
+            </information>
+            <endpoints>
+                <authenticate>/api/v1/Account/Authenticate</authenticate>
+                <portal_user_token>/api/v1/Account/PortalUserToken</portal_user_token>
+            </endpoints>
+            <credentials>
+                <username>webteam@echo-usa.com</username>
+                <password>EchoPartsmart@2023</password>
+                <expires_in>10800</expires_in>
+            </credentials>
+        </ecommerce121_partsmart>
+    </default>
+</config>

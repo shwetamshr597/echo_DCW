@@ -1,0 +1,25 @@
+{
+    "name": "ecommerce121/retractable-footer",
+    "description": "Retractable footer extension by 121eCommerceLLC",
+    "require": {
+        "ecommerce121/core": "1.0.*",
+        "php": "~7.0.13||~7.1.0||~7.2.0||~7.3.0||~7.4.0||~8.1.0"
+    },
+    "type": "magento2-module",
+    "license": [
+        "Commercial"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Ecommerce121\\FixedFooter\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

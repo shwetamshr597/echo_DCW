@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author 121eCommerce
+ * @copyright Copyright (c) 2021 121eCommerce (https://www.121ecommerce.com/)
+ * @package Ecommerce121_StickyHeader
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="ecommerce121.StickyHeader"
+                   template="Ecommerce121_StickyHeader::sticky_header.phtml" before="-"
+                   ifconfig="ecommerce121_sticky_header/general/enable" />
+        </referenceContainer>
+    </body>
+</page>

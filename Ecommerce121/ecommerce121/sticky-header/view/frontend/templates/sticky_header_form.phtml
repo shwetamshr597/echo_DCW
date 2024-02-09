@@ -1,0 +1,59 @@
+<?php
+/*
+ * Copyright (c) 2021 121Ecommerce (https://www.121ecommerce.com/)
+ */
+?>
+<script>
+ require([
+    'jquery',
+    'mage/mage',
+    'domReady!'
+], function ($) {
+    'use strict';
+<?php
+/**
+ * @var $block Ecommerce121\StickyHeader\Block\StickyHeader
+ */
+$productType = $block->getProduct()->getTypeId();
+$includeInStickyHeader = false;
+$maxOptionsToShow = 0;
+switch ($productType) {
+    case 'simple':
+        $includeInStickyHeader = $block->getStickyHeaderConfig()->getIncludeInStickyHeaderSimpleProduct();
+        break;
+    case 'configurable':
+        $includeInStickyHeader = $block->getStickyHeaderConfig()->getIncludeInStickyHeaderConfigurableProduct();
+        $maxOptionsToShow = $block->getStickyHeaderConfig()->getMaxOptionsForConfigurableProduct();
+        break;
+    case 'bundle':
+        $includeInStickyHeader = $block->getStickyHeaderConfig()->getIncludeInStickyHeaderBundleProduct();
+        break;
+    case 'grouped':
+        $includeInStickyHeader = $block->getStickyHeaderConfig()->getIncludeInStickyHeaderGroupedProduct();
+        break;
+    case 'virtual':
+        $includeInStickyHeader = $block->getStickyHeaderConfig()->getIncludeInStickyHeaderVirtualProduct();
+        break;
+    case 'downloadable':
+        $includeInStickyHeader = $block->getStickyHeaderConfig()->getIncludeInStickyHeaderDownloadableProduct();
+        break;
+}
+?>
+<?php if ($includeInStickyHeader): ?>
+    <?php if ($productType === 'bundle'): ?>
+        var stickAfter = $('.action.customize').length > 0 ? $('.action.customize').offset().top : 0;
+    <?php else: ?>
+        var stickAfter = $('#product-addtocart-button').length > 0 ? $('#product-addtocart-button').offset().top : 0;
+    <?php endif; ?>
+
+    $('.product-info-main').mage('Ecommerce121StickyHeader', {
+         container: '.page-main',
+         name: 'pdp',
+         stickAfter: stickAfter,
+         cssAppliedClass: '.product-info-main'
+    });
+    $('.product-info-main').addClass('hasSticky');
+<?php endif ?>
+});
+</script>
+<span id="sticky-header-btn-navigation" class="sticky-header-btn-navigation"><span>Toggle Nav</span></span>

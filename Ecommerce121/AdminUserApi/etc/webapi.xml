@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route url="/V1/adminuserapi" method="POST">
+		<service class="Ecommerce121\AdminUserApi\Api\AdminUserApiManagementInterface" method="postAdminUserApi"/>
+		<resources>
+            <resource ref="Ecommerce121_AdminUserApi::adminuserapi_create" />
+		</resources>
+	</route>
+    <route url="/V1/adminuserapi/:id" method="PUT">
+        <service class="Ecommerce121\AdminUserApi\Api\AdminUserApiManagementInterface" method="putAdminUserApi"/>
+        <resources>
+            <resource ref="Ecommerce121_AdminUserApi::adminuserapi_update"/>
+        </resources>
+    </route>
+    <route url="/V1/adminuserapi/:id" method="GET">
+        <service class="Ecommerce121\AdminUserApi\Api\AdminUserApiManagementInterface" method="getAdminUserApi"/>
+        <resources>
+            <resource ref="Ecommerce121_AdminUserApi::adminuserapi_get"/>
+        </resources>
+    </route>
+</routes>

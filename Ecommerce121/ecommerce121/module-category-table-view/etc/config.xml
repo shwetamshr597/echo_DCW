@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ecommerce121_category_table_view>
+            <general>
+                <merge_layered_nav_attributes>1</merge_layered_nav_attributes>
+            </general>
+        </ecommerce121_category_table_view>
+    </default>
+</config>

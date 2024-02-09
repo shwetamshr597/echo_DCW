@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="company" resource="default" engine="innodb" comment="Company Table">
+        <column xsi:type="varchar" name="echo_cust_class" nullable="true" length="80" comment="Echo Cust Class"/>
+        <column xsi:type="int" name="echo_salesRep_id" unsigned="true" nullable="true" identity="false"
+                comment="Echo SalesRepId"/>
+        <column xsi:type="int" name="echo_cust_id" unsigned="true" nullable="true" identity="false"
+                comment="Echo Company ID"/>
+    </table>
+    <table name="customer_address_entity" resource="default" engine="innodb" comment="Customer Address Entity">
+        <column xsi:type="varchar" name="echo_loc_id" nullable="true" length="80" comment="Echo Cust Class"/>
+    </table>
+</schema>

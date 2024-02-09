@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="general">
+        <settings>
+            <disabled>true</disabled>
+        </settings>
+    </fieldset>
+    <fieldset name="information" sortOrder="20">
+        <settings>
+            <disabled>true</disabled>
+        </settings>
+    </fieldset>
+    <fieldset name="address" sortOrder="30">
+        <settings>
+            <disabled>true</disabled>
+        </settings>
+        <container name="street_container" component="Magento_Ui/js/form/components/group">
+            <field name="street" formElement="input">
+                <settings>
+                    <disabled>true</disabled>
+                </settings>
+            </field>
+            <field name="street_second" formElement="input">
+                <settings>
+                    <disabled>true</disabled>
+                </settings>
+            </field>
+        </container>
+    </fieldset>
+    <fieldset name="company_admin" sortOrder="40">
+        <settings>
+            <disabled>true</disabled>
+        </settings>
+    </fieldset>
+    <fieldset name="company_credit" sortOrder="60">
+        <settings>
+            <disabled>true</disabled>
+        </settings>
+    </fieldset>
+    <fieldset name="settings" sortOrder="60">
+        <settings>
+            <disabled>true</disabled>
+        </settings>
+        <container name="payment_container" component="Magento_Ui/js/form/components/group" sortOrder="40">
+            <field name="extension_attributes.applicable_payment_method"
+                   class="Magento\CompanyPayment\Ui\Component\Form\Field\PaymentMethod"
+                   component="Magento_CompanyPayment/js/form/element/select/select-company-payment-method"
+                   formElement="select">
+                <settings>
+                    <disabled>true</disabled>
+                </settings>
+            </field>
+            <field name="extension_attributes.use_config_settings"
+                   component="Magento_CompanyPayment/js/form/element/use-config-settings" formElement="checkbox">
+                <settings>
+                    <disabled>true</disabled>
+                </settings>
+            </field>
+        </container>
+        <container name="shipping_container" component="Magento_Ui/js/form/components/group" sortOrder="60">
+            <field name="extension_attributes.applicable_shipping_method"
+                   class="Magento\CompanyShipping\Ui\Component\Form\Field\ShippingMethod"
+                   component="Magento_CompanyShipping/js/form/element/select/select-company-shipping-method"
+                   formElement="select">
+                <settings>
+                    <disabled>true</disabled>
+                </settings>
+            </field>
+            <field name="extension_attributes.use_config_settings_shipping"
+                   component="Magento_CompanyShipping/js/form/element/use-config-settings" formElement="checkbox">
+                <settings>
+                    <disabled>true</disabled>
+                </settings>
+            </field>
+        </container>
+    </fieldset>
+</form>

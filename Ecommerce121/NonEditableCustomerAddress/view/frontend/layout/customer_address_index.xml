@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <body>
+        <referenceBlock name="address_grid" remove="true"/>
+        <referenceContainer name="content">
+            <referenceBlock
+                name="address_book"
+                class="Magento\Customer\Block\Address\Book"
+                template="Ecommerce121_NonEditableCustomerAddress::address/book.phtml">
+            </referenceBlock>
+        </referenceContainer>
+    </body>
+</page>
